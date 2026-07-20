@@ -49,3 +49,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+// Lógica de validación de formulario de login completada

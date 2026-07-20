@@ -179,4 +179,23 @@ footer {
 
 .btn-buy:hover {
     filter: brightness(1.2);
+/* Estilos específicos para la vista de login */
+/* Estilo del botón de enviar/ingresar */
+.btn-submit {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.btn-submit:hover {
+    background-color: #e03232;
+    transform: translateY(-2px);
+}}
