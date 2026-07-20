@@ -3,16 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda SNKRS</title>
+    <title>Inicio - Tienda SNKRS</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <!-- Encabezado y Navegación Principal -->
     <header>
-        <h1>Tienda SNKRS</h1>
+        <div class="logo">SNKRS <span>STORE</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="usuarios.html">Proveedores</a></li>
+                <li><a href="api.html">Envíos</a></li>
+                <!-- Botón de Cambio de Tema (Claro / Oscuro) -->
+                <li>
+                    <button id="themeToggle" class="theme-toggle-btn">
+                        🌙 <span id="themeText">Modo Claro</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Contenido Principal -->
     <main>
-        <p>Proyecto base configurado correctamente</p>
+        <!-- Banner de Bienvenida (Hero Section) -->
+        <section class="hero">
+            <h1>EDICIONES EXCLUSIVAS Y LIFESTYLE</h1>
+            <p>El punto de encuentro para los amantes del calzado urbano y la cultura sneaker.</p>
+        </section>
+
+        <!-- Mensaje de Bienvenida -->
+        <section style="max-width: 800px; margin: 3rem auto; text-align: center; padding: 0 1rem;">
+            <h2 style="margin-bottom: 1rem; font-size: 2rem;">Bienvenido a la Experiencia SNKRS</h2>
+            <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.1rem;">
+                Nos dedicamos a seleccionar y traerte los modelos más codiciados de las marcas más icónicas del mundo. 
+                Explora nuestras secciones para conocer nuestra trayectoria, revisar la galería de fotos, descubrir 
+                nuestro catálogo de productos destacados o consultar nuestra red de proveedores y el estado de envíos.
+            </p>
+        </section>
     </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Tienda SNKRS. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Funcionalidad -->
     <script src="js/main.js"></script>
 </body>
 </html>
