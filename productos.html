@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Sneaker Store</title>
+    <!-- Aquí mandamos a llamar a tu archivo CSS separado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Sneaker <span>Store</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Catálogo</a></li>
+                <li><a href="usuarios.html">API Usuarios</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle-btn">🌓 Tema</button>
+    </header>
+
+    <!-- Contenido principal -->
+    <main style="padding: 2rem; flex: 1;">
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--text-color);">Nuestros Productos y Servicios</h2>
+        
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/250x180/1a1a1e/ff3e3e?text=Jordan+1" alt="Jordan 1">
+                <h3>Jordan 1 Retro</h3>
+                <p>Categoría: Sneakers</p>
+                <h3 style="color: var(--primary-color);">$3,200.00</h3>
+                <br>
+                <button class="btn-buy">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/250x180/1a1a1e/ff3e3e?text=Air+Max" alt="Air Max">
+                <h3>Air Max 90</h3>
+                <p>Categoría: Sneakers</p>
+                <h3 style="color: var(--primary-color);">$2,500.00</h3>
+                <br>
+                <button class="btn-buy">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/250x180/1a1a1e/ff3e3e?text=Yeezy" alt="Yeezy">
+                <h3>Yeezy Boost 350</h3>
+                <p>Categoría: Sneakers</p>
+                <h3 style="color: var(--primary-color);">$4,100.00</h3>
+                <br>
+                <button class="btn-buy">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/250x180/1a1a1e/ff3e3e?text=Classic" alt="Classic">
+                <h3>Classic Leather</h3>
+                <p>Categoría: Sneakers</p>
+                <h3 style="color: var(--primary-color);">$1,800.00</h3>
+                <br>
+                <button class="btn-buy">Añadir al carrito</button>
+            </div>
+
+            <!-- Servicio 5 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/250x180/1a1a1e/ff3e3e?text=Servicio" alt="Limpieza">
+                <h3>Limpieza Premium</h3>
+                <p>Servicio de mantenimiento</p>
+                <h3 style="color: var(--primary-color);">$350.00</h3>
+                <br>
+                <button class="btn-buy">Contratar Servicio</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sneaker Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Pequeño script para que funcione tu botón de tema claro/oscuro -->
+    <script>
+        const btnTheme = document.querySelector('.theme-toggle-btn');
+        btnTheme.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
+</body>
+</html>
