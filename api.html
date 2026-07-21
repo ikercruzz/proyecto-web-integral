@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envíos y Rastreo - Tienda SNKRS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header y Navbar Completo -->
+    <header>
+        <div class="logo">SNKRS <span>STORE</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="usuarios.html">Proveedores</a></li>
+                <li><a href="api.html" class="active">Envíos</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle-btn">
+                        🌙 <span id="themeText">Modo Claro</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal de Envíos -->
+    <main style="max-width: 1000px; margin: 2rem auto; padding: 0 1rem; width: 100%;">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary-color);">
+            Gestión y Rastreo de Envíos
+        </h2>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">
+            Consulta la cobertura nacional y realiza el seguimiento de tus pedidos en tiempo real.
+        </p>
+
+        <!-- Formulario de Rastreo -->
+        <section style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; border: 1px solid var(--border-color);">
+            <h3 style="margin-bottom: 1rem;">Rastrear Paquete</h3>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <input type="text" id="trackingInput" placeholder="Ingresa tu número de guía (Ej: SNK-9821)" style="flex: 1; padding: 0.8rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-color);">
+                <button id="btnBuscarEnvio" class="btn-submit" style="width: auto; margin-top: 0; padding: 0.8rem 1.5rem;">
+                    Buscar
+                </button>
+            </div>
+            <p id="trackingResult" style="margin-top: 1rem; font-weight: bold; display: none;"></p>
+        </section>
+
+        <!-- Tarjetas Informativas -->
+        <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+            <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                <h3>🚚 Envío Estándar</h3>
+                <p style="color: var(--text-muted); margin-top: 0.5rem;">Entrega de 3 a 5 días hábiles a todo el país. Envío gratuito en compras mayores a $2,999 MXN.</p>
+            </div>
+            <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                <h3>⚡ Envío Express</h3>
+                <p style="color: var(--text-muted); margin-top: 0.5rem;">Entrega prioritaria de 24 a 48 horas en zonas metropolitanas principales.</p>
+            </div>
+            <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                <h3>🛡️ Garantía de Entrega</h3>
+                <p style="color: var(--text-muted); margin-top: 0.5rem;">Todos nuestros paquetes viajan asegurados al 100% contra pérdidas o daños de traslado.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Tienda SNKRS. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+</body>
+</html>
